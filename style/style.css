@@ -1,5 +1,6 @@
+
 .body {
-   
+    overflow-x: hidden;
     background-color:#e8fbeb;
 }
 /* Center the container initially */
@@ -40,4 +41,196 @@
 .dropdown-item:active {
     background-color: lightgreen !important; /* Light green when clicked */
     color: rgb(135, 199, 120) !important; /* Black text when clicked */
+}
+.carousel-item img {
+    height: 500px;  /* Set the height to a small value */
+    display: flex;
+    justify-content: center;
+    align-items: center;     /* Maintain aspect ratio */
+}
+/* transparent button */
+.center-btn {
+    position: absolute;         /* Position it absolutely within the page */
+    top: 80%;                   /* Center vertically */
+    left: 50%;                  /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust the position exactly to the center */
+    padding: 10px 20px;         /* Button padding */
+    background-color: rgba(242, 183, 73, 0.514); /* Light green with transparency */
+    border: 2px solid rgba(40, 167, 69, 0.6); /* Border color with transparency */
+    color: #28a745;             /* Text color (green) */
+    font-size: 16px;            /* Text size */
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30px;        /* Rounded corners (change value for more/less roundness) */
+    transition: all 0.3s ease;  /* Smooth transition for hover effects */
+  }
+  
+  .center-btn:hover {
+    background-color: rgba(40, 167, 69, 0.8); /* Darker green with transparency on hover */
+    color: white;              /* Change text color on hover */
+  }
+  /* overview */
+
+  header {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.overview {
+    padding: 4rem 0;
+}
+
+.overview h2 {
+    color: #2a8b2d;
+}
+
+.overview img {
+    border-radius: 8px;
+}
+
+.overview p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.bestsellers {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.bestsellers h2 {
+    margin-bottom: 2rem;
+    color: #2a8b2d;
+}
+
+.bestsellers .col {
+    text-align: center;
+}
+
+.bestsellers img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.bestsellers p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.team {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.team h2 {
+    color: #2a8b2d;
+}
+
+.team .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.team .card img {
+    width: 100%;
+    height: auto;
+}
+
+.team .card .btn {
+    background-color: #ff6f00;
+    color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #2a8b2d;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+}
+
+footer h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin: 0 0 1rem;
+    line-height: 1.6;
+}
+
+footer .search-bar {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer .search-bar input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+footer .search-bar button {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0 15px;
+    color: #2a8b2d;
+}
+
+/* Decorative Leaf Styles */
+.overview::before,
+.overview::after,
+.bestsellers::before,
+.bestsellers::after,
+.team::before,
+.team::after {
+    content: "";
+    position: absolute;
+    background: url('path-to-leaf.png') no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
+.overview::before {
+    top: -20px;
+    left: -20px;
+}
+
+.overview::after {
+    bottom: -20px;
+    right: -20px;
+}
+
+.bestsellers::before {
+    top: -20px;
+    left: 10%;
+}
+
+.bestsellers::after {
+    bottom: -20px;
+    right: 10%;
+}
+
+.team::before {
+    top: -20px;
+    left: -20px;
+}
+
+.team::after {
+    bottom: -20px;
+    right: -20px;
 }
