@@ -72,7 +72,7 @@
   /* overview */
 
   header {
-    background-color: #f8f9fa;
+    background-color:#e8fbeb;
     padding: 2rem 0;
     text-align: center;
 }
@@ -96,7 +96,8 @@
 
 .bestsellers {
     padding: 4rem 0;
-    background-color: #f8f9fa;
+    background-color:#e8fbeb;
+
 }
 
 .bestsellers h2 {
@@ -183,7 +184,7 @@ footer .search-bar input {
 }
 
 footer .search-bar button {
-    background-color: white;
+    background-color:#e8fbeb;
     border: none;
     border-radius: 20px;
     padding: 0 15px;
