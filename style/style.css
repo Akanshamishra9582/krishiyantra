@@ -1,4 +1,43 @@
 .body {
    
-    background-color:#d8f3dc;
+    background-color:#e8fbeb;
+}
+/* Center the container initially */
+/* Make the logo in the navbar normal */
+/* Make the logo in the navbar normal */
+
+
+.navbar-nav .nav-item {
+    margin-right: 30px; 
+  
+}
+.navbar-nav .nav-link {
+    color:#2b5f00; /* Your desired color */
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgb(241, 213, 162);
+    border-radius: 20px; /* Round corners */
+    color: white; /* Change text color on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 3D shadow */
+    transform: scale(1.1) translateY(-3px); /* Slightly lift the item */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+/* Dropdown menu background color */
+/* Dropdown menu background color */
+.dropdown-menu {
+    background-color: rgb(107, 170, 107) !important; /* Set green background */
+}
+
+/* Hover effect: Darker green when hovering */
+.dropdown-item:hover {
+    background-color:rgb(241, 213, 162) !important; /* Dark green on hover */
+    color: white; /* White text on hover */
+}
+
+/* Active (clicked) effect: Lighter green when clicked */
+.dropdown-item:active {
+    background-color: lightgreen !important; /* Light green when clicked */
+    color: rgb(135, 199, 120) !important; /* Black text when clicked */
 }
