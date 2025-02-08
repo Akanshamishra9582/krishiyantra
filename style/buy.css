@@ -86,5 +86,16 @@
     left:4; /* Optional: Add a border */
 }
 
+.bestsellers h2 {
+    color: #315d0d; /* Change this to your preferred color */
+}
+
+.bestsellers p {
+    color: #28a745; /* Change this to your preferred color */
+    font-weight: bold; /* Optional: makes the text bold */
+    text-align: center; /* Keeps text centered under the image */
+}
+
+
 
 
