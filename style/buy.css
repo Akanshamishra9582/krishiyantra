@@ -95,6 +95,67 @@
     font-weight: bold; /* Optional: makes the text bold */
     text-align: center; /* Keeps text centered under the image */
 }
+/* General Styling */
+body {
+    text-align: center;
+    background-color: #e8f8e8; /* Light green */
+    padding: 20px;
+}
+
+/* Navbar Styling */
+.nav-bar {
+    background-color: #145a10; /* Dark Green */
+    padding: 40px 0; /* Increased padding */
+    position: relative;
+    z-index: 1;
+}
+
+/* Dairy List */
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-bar li {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    z-index: 2; /* Ensuring text stays above */
+}
+
+/* Circular Image Fix */
+.circle-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -70px; /* Moves it higher */
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid white;
+    background-color: white;
+    z-index: 3; /* Ensuring it is properly placed */
+}
+
+/* Leaf Images */
+.leaf {
+    width: 80px;
+    position: absolute;
+    top: 0;
+}
+
+.leaf-left {
+    left: 0;
+}
+
+.leaf-right {
+    right: 0;
+}
 
 
 
