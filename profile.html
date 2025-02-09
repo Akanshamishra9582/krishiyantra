@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Profile Page - Krishiyantra</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-transparent">
+        <div class="container-fluid">
+            <a ><img src="img/logo.png" alt="Logo" height="50"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link  me-4 "  aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-4" href="buy.html">Fruits&Veggies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  me-4 "  aria-current="page" href="sellresidue.html">Sell Residue</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  me-4 "  aria-current="page" href="#">AboutUs</a>
+              </li>
+             
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/profilelogo.png" alt="Profile Logo" class="rounded-circle" width="30" height="30"> <!-- Profile image -->
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                        <li><a class="dropdown-item" href="#">MyTokens</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            
+          </div>
+        </div>
+      </nav>
+    <!-- Profile Page -->
+    <section class="profile py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Profile Picture -->
+                <div class="col-md-4 text-center">
+                    <img src="img/akansha.jpg" alt="Profile Picture" class="img-fluid rounded-circle" width="200">
+                    <h3 class="mt-3">John Doe</h3>
+                    <p class="text-muted">Premium Member</p>
+                </div>
+
+                <!-- Personal Info -->
+                <div class="col-md-8">
+                    <h4 class="fw-bold">Personal Information</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>Email:</strong> johndoe@example.com
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Phone:</strong> +91 123 456 7890
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Location:</strong> Delhi, India
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Member Since:</strong> January 2023
+                        </li>
+                    </ul>
+
+                    <h4 class="mt-5 fw-bold">My Orders</h4>
+                    <table class="table table-bordered mt-3">
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#1001</td>
+                                <td>Feb 1, 2025</td>
+                                <td>Shipped</td>
+                                <td>₹ 1,500.00</td>
+                            </tr>
+                            <tr>
+                                <td>#1002</td>
+                                <td>Jan 25, 2025</td>
+                                <td>Delivered</td>
+                                <td>₹ 1,200.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="mt-5">
+                        <button class="btn btn-primary btn-lg">Edit Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
