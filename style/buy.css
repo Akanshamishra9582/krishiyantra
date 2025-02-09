@@ -110,7 +110,7 @@ body {
 
 /* Navbar Styling */
 .nav-bar {
-    background-color: #145a10; /* Dark Green */
+    background-color: #ffffff; /* Dark Green */
     padding: 40px 0; /* Increased padding */
     position: relative;
     z-index: 1;
@@ -149,7 +149,7 @@ body {
 }
 /* Dairy Navbar Styling */
 .nav-bar {
-    background-color: #045a23; /* Warm Yellow (Dairy Theme) */
+    background-color: #518365; /* Warm Yellow (Dairy Theme) */
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -169,7 +169,7 @@ body {
 /* Dairy Navbar Links */
 .nav-bar .nav-item a {
     text-decoration: none;
-    color: #ff6a00; /* Brown (Earthy Tone) */
+    color: #0c0601; /* Brown (Earthy Tone) */
     font-weight: bold;
     transition: color 0.3s ease-in-out;
     font-size: 18px;
