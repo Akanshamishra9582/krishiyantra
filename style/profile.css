@@ -1,10 +1,8 @@
-body {
-    overflow-x: hidden;
-    background-color:#e8fbeb;
+body  {
+    font-family: Arial, sans-serif;
 }
- 
 
- .profile img {
+.profile img {
     max-width: 200px;
     border: 5px solid #ddd;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -41,13 +39,7 @@ body {
 .profile .container {
     max-width: 1200px;
 }
-
-/* Center the container initially */
-/* Make the logo in the navbar normal */
-/* Make the logo in the navbar normal */
-
-
-.navbar-nav .nav-item {
+navbar-nav .nav-item {
     margin-right: 30px; 
   
 }
@@ -81,30 +73,104 @@ body {
     background-color: lightgreen !important; /* Light green when clicked */
     color: rgb(135, 199, 120) !important; /* Black text when clicked */
 }
-.carousel-item img {
-    height: 500px;  /* Set the height to a small value */
-    display: flex;
-    justify-content: center;
-    align-items: center;     /* Maintain aspect ratio */
+
+
+/* Profile section styles */
+.profile {
+    background-color: #fdfdfd; /* White background for profile content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 30px;
 }
-/* transparent button */
-.center-btn {
-    position: absolute;         /* Position it absolutely within the page */
-    top: 80%;                   /* Center vertically */
-    left: 50%;                  /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust the position exactly to the center */
-    padding: 10px 20px;         /* Button padding */
-    background-color: rgba(242, 183, 73, 0.514); /* Light green with transparency */
-    border: 2px solid rgba(40, 167, 69, 0.6); /* Border color with transparency */
-    color: #28a745;             /* Text color (green) */
-    font-size: 16px;            /* Text size */
-    text-align: center;
+
+/* Profile picture styling */
+.profile img {
+    border: 4px solid #020911; /* Blue border around the profile picture */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for profile picture */
+}
+
+/* Header styling */
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Personal Information section */
+ul.list-group {
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* List items in the personal info section */
+.list-group-item {
+    font-size: 1rem;
+    border: none;
+    padding: 10px;
+}
+
+.list-group-item:hover {
     cursor: pointer;
-    border-radius: 30px;        /* Rounded corners (change value for more/less roundness) */
-    transition: all 0.3s ease;  /* Smooth transition for hover effects */
-  }
-  
-  .center-btn:hover {
-    background-color: rgba(40, 167, 69, 0.8); /* Darker green with transparency on hover */
-        color: white;  }            /* Change text color on hover *
+}
+
+/* Orders Table */
+.table {
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+}
+
+
+
+
+/* Edit Profile Button */
+.btn-primary {
+    background-color: #00070e;
+    border-color: #01070e;
+    border-radius: 50px; /* Rounded corners */
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #01060b;
+    border-color: #01080f;
+}
+
+/* Navbar adjustments for a modern look */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for navbar */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+/* Dropdown menu */
+.dropdown-menu {
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Apply a background image to the entire page */
+body {
+    background: url('../img/farm3.jpg') no-repeat center center fixed; 
+    background-size: cover; /* Cover the entire page */
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+
+
+
+
 
