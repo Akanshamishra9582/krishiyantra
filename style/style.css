@@ -149,6 +149,9 @@
     border-radius: 20px;
     margin-top: 10px;
 }
+.team .card .btn:hover{
+    background-color:#74cf82
+}
 
 footer {
     background-color: #2a8b2d;
