@@ -1,0 +1,63 @@
+/* Contact Us Section */
+.contact-container {
+    background-color: rgba(0, 128, 0, 0.1); /* Light Green Transparent */
+    padding: 30px;
+    margin: 50px auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 128, 0, 0.2);
+  }
+  
+  .contact-container h2 {
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+  
+  .call-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .call-btn:hover {
+    background-color: #1e7e34;
+    transform: scale(1.05);
+  }
+  
+  /* Voice Note Section */
+  .voice-container {
+    text-align: center;
+    background: rgba(40, 167, 69, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .record-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .record-btn:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+  }
+  
+  /* Audio Playback */
+  #audioPlayback {
+    margin-top: 10px;
+    width: 100%;
+  }
+  

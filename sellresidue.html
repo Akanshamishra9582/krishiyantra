@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style/style.css">
+    <link rel = "stylesheet" href="style/sellresidue.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>krishiyantra</title>
+</head>
+<body class="body">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-transparent">
+        <div class="container-fluid">
+            <a ><img src="img/logo.png" alt="Logo" height="50"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link  me-4 "  aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-4" href="buy.html">Fruits&Veggies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  me-4 "  aria-current="page" href="#">Sell Residue</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  me-4 "  aria-current="page" href="#">AboutUs</a>
+              </li>
+              
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/profilelogo.png" alt="Profile Logo" class="rounded-circle" width="30" height="30"> <!-- Profile image -->
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                        <li><a class="dropdown-item" href="#">MyTokens</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            
+            
+            
+          </div>
+        </div>
+      </nav>
+      <div class="container mt-5">
+        <h2 class="text-center mb-4">Sell Your Farm Residue</h2>
+        <form>
+          <!-- Farmer Name -->
+          <div class="mb-3">
+            <label for="farmerName" class="form-label">Farmer Name</label>
+            <input type="text" class="form-control" id="farmerName" placeholder="Enter your name" required>
+          </div>
+      
+          <!-- Residue Type -->
+          <div class="mb-3">
+            <label for="residueType" class="form-label">Residue Type</label>
+            <input type="text" class="form-control" id="residueType" placeholder="E.g., Wheat Straw, Sugarcane Waste" required>
+          </div>
+      
+          <!-- Quantity -->
+          <div class="mb-3">
+            <label for="quantity" class="form-label">Quantity (in kg)</label>
+            <input type="number" class="form-control" id="quantity" placeholder="Enter quantity" required>
+          </div>
+      
+          <!-- Location -->
+          <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" class="form-control" id="location" placeholder="Enter your farm location" required>
+          </div>
+      
+          <!-- Contact Number -->
+          <div class="mb-3">
+            <label for="contact" class="form-label">Contact Number</label>
+            <input type="tel" class="form-control" id="contact" placeholder="Enter your phone number" required>
+          </div>
+      
+          <!-- Voice Recording Feature -->
+          <div class="voice-container">
+            <p>🎤 Hold to record your voice</p>
+            <button id="recordButton" class="record-btn">🎙️ Hold to Record</button>
+            <audio id="audioPlayback" controls></audio>
+            <input type="hidden" id="voiceNoteData" name="voiceNoteData">
+          </div>
+      
+          <!-- Submit Button -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-success">Submit</button>
+          </div>
+        </form>
+      </div>
+      
+      <!-- Contact Us Section -->
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>If you need help, call us directly:</p>
+        <a href="tel:+919876543210" class="call-btn">📞 Call Now</a>
+      </div>
+      
+      
+</body>
+   
