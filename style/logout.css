@@ -1,23 +1,10 @@
-
-body {
-    background-image: url('C:\Users\gokul\Documents\krishiyantra\krishiyantra\img\farm3.jpg');  /* Path to your image */
-    background-size: cover;  /* Ensures the image covers the entire page */
-    background-position: center;  /* Centers the image */
-    background-repeat: no-repeat;  /* Prevents the image from repeating */
-    height: 100vh;  /* Makes sure the image takes up the full height of the viewport */
-    margin: 0;  /* Removes default margin */
+.body {
+    overflow-x: hidden;
+    background-color:#e8fbeb;
 }
-
-
-
 /* Center the container initially */
 /* Make the logo in the navbar normal */
 /* Make the logo in the navbar normal */
-.navbar {
-    background-color: #333; /* Or any other color */
-    padding: 1rem;
-}
-
 
 
 .navbar-nav .nav-item {
@@ -43,16 +30,17 @@ body {
     background-color: rgb(107, 170, 107) !important; /* Set green background */
 }
 
+/* Hover effect: Darker green when hovering */
 .dropdown-item:hover {
-    background-color: rgb(241, 213, 162); /* Darker green on hover */
+    background-color:rgb(241, 213, 162) !important; /* Dark green on hover */
     color: white; /* White text on hover */
 }
 
+/* Active (clicked) effect: Lighter green when clicked */
 .dropdown-item:active {
-    background-color: lightgreen; /* Light green when clicked */
-    color: rgb(135, 199, 120); /* Black text when clicked */
+    background-color: lightgreen !important; /* Light green when clicked */
+    color: rgb(135, 199, 120) !important; /* Black text when clicked */
 }
-
 .carousel-item img {
     height: 500px;  /* Set the height to a small value */
     display: flex;
@@ -80,37 +68,39 @@ body {
     background-color: rgba(40, 167, 69, 0.8); /* Darker green with transparency on hover */
     color: white;              /* Change text color on hover */
   }
- 
 
-  .logout-container {
-    background: rgba(255, 255, 255, 0.3);
+/* Background with Image */
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: url('img/farm3.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+/* Logout Box */
+.logout-container {
+    background: rgba(255, 255, 255, 0.2);
     padding: 30px;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Vendor prefix for Safari */
+    -webkit-backdrop-filter: blur(10px);
     max-width: 400px;
-    color: #fff;
-}
-button {
-    font-size: 1rem; /* Use rem instead of px for better scalability */
-}
-
-
-h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-}
-
-p {
-    font-size: 16px;
-    margin-bottom: 15px;
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 button {
@@ -122,17 +112,15 @@ button {
     cursor: pointer;
     border-radius: 5px;
     transition: 0.3s;
-    margin: 5px;
-}
-.center-btn:active {
-    transform: scale(0.98);  /* Button gets slightly smaller when clicked */
-    background-color: rgba(40, 167, 69, 0.9); /* Change the background color on click */
+    outline: none;
 }
 
 button:hover {
     background: #ff1e3c;
+    transform: scale(1.05);
 }
 
+/* Cancel Button */
 .cancel-btn {
     background: #4caf50;
 }
@@ -140,140 +128,20 @@ button:hover {
 .cancel-btn:hover {
     background: #388e3c;
 }
-.hero {
-    background-image: url('path-to-your-image.jpg'); /* Choose an engaging image */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    position: relative;
-}
 
-.hero-content {
-    z-index: 2;
-}
-
-.hero:before {
-    content: '';
+/* Footer */
+footer {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
-    z-index: 1;
-}
-
-h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.btn-main {
-    background-color: #ff4b5c;
-    padding: 12px 25px;
-    font-size: 18px;
-    color: white;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-
-.btn-main:hover {
-    background-color: #ff1e3c;
-    transform: scale(1.05);
-}
-.card {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-}
-
-.card img {
-    border-radius: 8px;
+    bottom: 10px;
     width: 100%;
-    height: auto;
-}
-
-.card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-top: 15px;
-}
-
-.card-text {
-    font-size: 1rem;
-    color: #777;
-    margin-top: 10px;
-}
-.parallax {
-    background-image: url('C:\Users\gokul\Documents\krishiyantra\krishiyantra\img\farm3.jpg');
-    height: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
-
-.footer {
-    background-color: #333;
-    color: white;
-    padding: 30px 20px;
     text-align: center;
+    color: rgb(5, 0, 0);
+    font-size: 14px;
+}
+.navbar {
+    background-color: #e8fbeb; /* Navbar background */
+    padding: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
 }
 
-.footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
-.footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.footer ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer ul li a:hover {
-    text-decoration: underline;
-}
-
-.social-icons {
-    margin-top: 15px;
-}
-
-.social-icon {
-    color: white;
-    margin-right: 10px;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.social-icon:hover {
-    color: #ff4b5c; /* Hover effect for social icons */
-}
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-.fade-in {
-    animation: fadeIn 1s ease-out;
-}
