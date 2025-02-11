@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background: url('../img/farm3.jpg') no-repeat center center fixed; 
     background-size: cover;
+  
 }
 
 
@@ -78,7 +79,7 @@ body {
 
 /* Profile section styles */
 .profile {
-    background-color: #fdfdfd; /* White background for profile content */
+    background-color:#d2f3b7; /* White background for profile content */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     padding: 30px;
