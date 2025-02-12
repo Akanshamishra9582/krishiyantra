@@ -104,33 +104,39 @@
     margin-bottom: 1rem;
 }
 
-.bestsellers {
-    padding: 4rem 0;
-    background-color :#c0e3c5;
-
-}
-
-.bestsellers h2 {
-    margin-bottom: 2rem;
-    color: #2a8b2d;
-}
-
-.bestsellers .col {
-    text-align: center;
-}
-
 .bestsellers img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-bottom: 0.5rem;
+    width: 120px; /* Adjust size as needed */
+    height: 120px;
+    object-fit: cover; /* Ensures the image fills the circle */
+    border-radius: 50%; /* Makes the images circular */
+    border: 3px solid #000000;
+    left:4; /* Optional: Add a border */
 }
+.bestsellers {
+    background: url('../img/farm.jpg') no-repeat center center/cover; /* Adjust path if needed */
+    padding: 50px 0;
+    border-radius: 10px; /* Optional: Rounded corners */
+    position: relative;
+}
+
+
+.bestsellers h1 {
+    color: green !important; /* Ensures green color */
+    font-weight: bold; /* Makes text bold */
+}
+
 
 .bestsellers p {
-    margin: 0;
+    color: #ffffff; /* Golden Yellow */
     font-weight: bold;
+    font-size: 18px; /* Adjust as needed */
+    text-shadow: 
+        -1px -1px 2px #000, 
+        1px -1px 2px #000, 
+        -1px 1px 2px #000, 
+        1px 1px 2px #000; /* Black outline effect */
 }
+
 
 .team {
     padding: 4rem 0;
